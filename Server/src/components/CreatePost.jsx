@@ -10,17 +10,17 @@ const CreatePost = () => {
   return (
     <div className="flex flex-col items-start h-full pl-3 pr-3">
       {/* Tabs Menu */}
-      <div className="flex items-center justify-around w-full gap-20 pt-4 pb-3 border-gray-700">
-        <div className=" m-auto text-xl text-white cursor-pointer font-extralight px-24  hover:bg-[#121212] rounded-full pb-2">
+      <div className="sticky top-0 left-0 right-0 z-50 flex items-center justify-around w-full gap-20 pt-4 pb-3 bg-black border-gray-700">
+        <div className="m-auto text-xl text-white cursor-pointer font-extralight px-24 hover:bg-[#121212] rounded-full pb-2">
           For you
         </div>
-        <div className=" m-auto text-xl text-white cursor-pointer font-extralight px-24  hover:bg-[#121212] rounded-full pb-2">
+        <div className="m-auto text-xl text-white cursor-pointer font-extralight px-24 hover:bg-[#121212] rounded-full pb-2">
           Following
         </div>
       </div>
 
       {/* Tweet Box */}
-      <div className="w-full max-w-4xl p-4 pt-0 bg-black rounded-lg shadow-md">
+      <div className="w-full max-w-4xl p-4 pt-2 bg-black rounded-lg shadow-md">
         <div className="flex flex-row ">
           <div>
             <Avatar
@@ -32,7 +32,7 @@ const CreatePost = () => {
           <div className="w-full p-4 pt-0 bg-black rounded-lg">
             <textarea
               placeholder="What's happening?"
-              className="p-3 text-white bg-[#0e0e0e] rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full"
+              className="p-3 text-white bg-[#0e0e0e] rounded-lg resize-none outline-none  w-full"
               rows={3}
             />
             <div className="flex items-center justify-between">

@@ -8,6 +8,9 @@ const Feed = () => {
       <CreatePost />
       <Tweet/>
       <Tweet/>
+      <Tweet/>
+      <Tweet/>
+      <Tweet/>
     </div>
   );
 };
